@@ -55,7 +55,7 @@ function resetState() {
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    //setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
@@ -99,24 +99,166 @@ const questions = [
         ]
     },
     {
-        question: 'these',
+        question: 'meat',
         answers: [
-            {text:'this', correct:false},
-            {text:'meat', correct:true}
+            {text:'friend', correct:false},
+            {text:'meet', correct:true}
         ]
     },
     {
-        question: 'these',
+        question: 'meet',
         answers: [
-            {text:'this', correct:false},
-            {text:'meat', correct:true}
+            {text:'complete', correct:true},
+            {text:'main', correct:false}
         ]
     },
     {
-        question: 'these',
+        question: 'complete',
+        answers: [
+            {text:'friend', correct:false},
+            {text:'need', correct:true},
+            {text:'hear', correct:false}
+        ]
+    },
+    {
+        question: 'need',
+        answers: [
+            {text:'eat', correct:true},
+            {text:'year', correct:false},
+            {text:'fit', correct:false},
+        ]
+    },
+    {
+        question: 'eat',
+        answers: [
+            {text:'sheep', correct:true},
+            {text:'friend', correct:false},
+            {text:'it', correct:false}
+        ]
+    },
+    {
+        question: 'sheep',
         answers: [
             {text:'this', correct:false},
-            {text:'meat', correct:true}
+            {text:'scene', correct:true},
+            {text:'ship', correct:false}
         ]
-    }
+    },
+    {
+        question: 'scene',
+        answers: [
+            {text:'like', correct:false},
+            {text:'TV', correct:true}
+        ]
+    },
+    {
+        question: 'meet',
+        answers: [
+            {text:'complete', correct:true},
+            {text:'main', correct:false}
+        ]
+    },
+    {
+        question: 'TV',
+        answers: [
+            {text:'ship', correct:false},
+            {text:'feel', correct:true}
+        ]
+    },
+    {
+        question: 'feel',
+        answers: [
+            {text:'fill', correct:false},
+            {text:'seat', correct:true}
+        ]
+    },
+    {
+        question: 'seat',
+        answers: [
+            {text:'read', correct:true},
+            {text:'sit', correct:false}
+        ]
+    },
+    {
+        question: 'read',
+        answers: [
+            {text:'fill', correct:false},
+            {text:'please', correct:true},
+            {text:'dead', correct:false}
+        ]
+    },
+    {
+        question: 'please',
+        answers: [
+            {text:'night', correct:false},
+            {text:'right', correct:false},
+            {text:'street', correct:true}
+        ]
+    },
+    {
+        question: 'street',
+        answers: [
+            {text:'dead', correct:false},
+            {text:'me', correct:true},
+            {text:'break', correct:false}
+        ]
+    },
+    {
+        question: 'me',
+        answers: [
+            {text:'sea', correct:true},
+            {text:'beer', correct:false},
+            {text:'fight', correct:false}
+        ]
+    },
+    {
+        question: 'sea',
+        answers: [
+            {text:'dead', correct:false},
+            {text:'cheap', correct:true},
+            {text:'bear', correct:false}
+        ]
+    },
+    {
+        question: 'cheap',
+        answers: [
+            {text:'feet', correct:true},
+            {text:'sit', correct:false},
+            {text:'beer', correct:false},
+        ]
+    },{
+        question: 'feet',
+        answers: [
+            {text:'bear', correct:false},
+            {text:'bean', correct:true},
+            {text:'fight', correct:false}
+        ]
+    },{
+        question: 'bean',
+        answers: [
+            {text:'teach', correct:true},
+            {text:'beer', correct:false},
+            {text:'bear', correct:false}
+        ]
+    },{
+        question: 'teach',
+        answers: [
+            {text:'bear', correct:false},
+            {text:'tree', correct:true},
+            {text:'fight', correct:false}
+        ]
+    },{
+        question: 'tree',
+        answers: [
+            {text:'east', correct:true},
+            {text:'beer', correct:false},
+            {text:'nine', correct:false}
+        ]
+    },{
+        question: 'east',
+        answers: [
+            {text:'nine', correct:false},
+            {text:'meal', correct:false}
+        ]
+    },
 ]
