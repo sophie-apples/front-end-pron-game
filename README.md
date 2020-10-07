@@ -12,6 +12,11 @@ Future development:
 - More games with different phonemes!
 - A phonemic spelling tool.
 
+This game uses:
+- Javascript
+- HTML
+- CSS
+
 This game was made with js guidance from https://www.youtube.com/watch?v=riDzcEQbX6k
 The questions were inspired by and adapted from 'Simple Sound Maze Puzzle 1 /i:/' from Prnunciation Games by Mark Hancock.
 
