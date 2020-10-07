@@ -47,7 +47,7 @@ body.incorrect {
 }
 
 .btn {
-    --hue: var(hue-neutral);
+    --hue: var(--hue-neutral);
     background-color: hsl(var(--hue), 100%, 80%);
     border: 2px solid hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
