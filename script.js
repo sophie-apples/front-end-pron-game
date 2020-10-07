@@ -5,6 +5,7 @@ const questionContainer = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const instructions = document.getElementById('instructions')
+const endofgamePopup = document.getElementById('endofgame')
 
 let nextQuestion, currentQuestionIndex
 
@@ -45,10 +46,12 @@ function showQuestion(question) {
 function resetState() {
     clearStatusClass(document.body)
     nextButton.classList.add('hidden')
+    endofgamePopup.classList.add('hidden')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
+
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
@@ -61,7 +64,7 @@ function selectAnswer(e) {
     } else {
         startButton.innerText = 'Restart'
         startButton.classList.remove('hidden')
-
+        endofgamePopup.classList.remove('hidden')
     }
 }
 
@@ -77,6 +80,7 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('incorrect')
+
 }
 
 const questions = [
