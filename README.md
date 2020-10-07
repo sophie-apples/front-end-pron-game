@@ -18,5 +18,5 @@ This game uses:
 - CSS
 
 This game was made with js guidance from https://www.youtube.com/watch?v=riDzcEQbX6k
-The questions were inspired by and adapted from 'Simple Sound Maze Puzzle 1 /i:/' from Prnunciation Games by Mark Hancock.
+The questions were inspired by and adapted from 'Simple Sound Maze Puzzle 1 /i:/' from Pronunciation Games by Mark Hancock.
 
