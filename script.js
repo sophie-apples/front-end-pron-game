@@ -4,10 +4,15 @@ const nextButton = document.getElementById('next-btn')
 const questionContainer = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const instructions = document.getElementById('instructions')
 
 let nextQuestion, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex ++
+    setNextQuestion()
+})
 
 function startGame() {
     console.log('started')
@@ -38,6 +43,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
+    clearStatusClass(document.body)
     nextButton.classList.add('hidden')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -50,7 +56,13 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    nextButton.classList.remove('hidden')
+    if (questions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hidden')
+    } else {
+        startButton.innerText = 'Restart'
+        startButton.classList.remove('hidden')
+
+    }
 }
 
 function setStatusClass(element, correct) {
@@ -73,6 +85,27 @@ const questions = [
         answers: [
             {text:'these', correct: true },
             {text:'like', correct: false }
+        ]
+    },
+    {
+        question: 'these',
+        answers: [
+            {text:'this', correct:false},
+            {text:'meat', correct:true}
+        ]
+    },
+    {
+        question: 'these',
+        answers: [
+            {text:'this', correct:false},
+            {text:'meat', correct:true}
+        ]
+    },
+    {
+        question: 'these',
+        answers: [
+            {text:'this', correct:false},
+            {text:'meat', correct:true}
         ]
     },
     {
