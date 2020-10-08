@@ -6,24 +6,45 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     
-    <title>Pronunciation Game /i:/ Quiz</title>
+    <title>Pronunciation Games</title>
 </head>
 <body class="">
-    <div id="endofgame" class="hidden">Well done!!</div>
+    <div class="header">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="game1.html">/i:/</a>
+    </div>
+    <h1 class="pagetitle">British vowels</h1>
+    <h2 class="subheading">Click the buttons to hear the phonemic sounds. For more practice, choose a phoneme game from the navigation bar.</h2>
     <div class="container">
-        <div id="question-container" class="hidden">
-            <div id="instructions">Select the word which contains the same /i:/ sound (e.g.'tree', 'be', 'me'): </div>
-            <div id="question" class="questions"><br>Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                </div>
-            </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn hidden">Next</button>
+    <h2>Single vowels</h2>
+    <h3>Long sounds have '':'' after the symbol</h3>
+        <div class="phonemes">
+            <button id="ship" class="btn phoneme-btn">/I/<br>sh<u>i</u>p</button>
+            <button id="sheep" class="btn phoneme-btn">/i:/<br>sh<u>ee</u>p</button>
+            <button id="book" class="btn phoneme-btn">/ʊ/<br>b<u>oo</u>k</button>
+            <button id="shoot" class="btn phoneme-btn">/u:/<br>b<u>oo</u>k</button>
+            <button id="egg" class="btn phoneme-btn">/e/<br><u>e</u>gg</button>
+            <button id="her" class="btn phoneme-btn">/ɜ:/<br>h<u>er</u></button>
+            <button id="teacher" class="btn phoneme-btn">/ə/<br>teach<u>er</u></button>
+            <button id="horse" class="btn phoneme-btn">/ɔ:/<br>h<u>or</u>se</button>
+            <button id="cat" class="btn phoneme-btn">/æ/<br>c<u>a</u>t</button>
+            <button id="up" class="btn phoneme-btn">/ʌ/<br><u>u</u>p</button>
+            <button id="orange" class="btn phoneme-btn">/ɒ/<br><u>o</u>range</button>
+            <button id="car" class="btn phoneme-btn">/ɑ:/<br>c<u>ar</u></button>
         </div>
+        <h2>Dipthongs</h2>
+    <h3>These sounds are two vowel sounds in a single syllable</h3>
+        <div class="phonemes">
+            <button id="play" class="btn phoneme-btn">/eɪ/<br>pl<u>ay</u></button>
+            <button id="boy" class="btn phoneme-btn">/ɔɪ/<br>b<u>oy</u></button>
+            <button id="like" class="btn phoneme-btn">/aɪ/<br>l<u>i</u>ke</button>
+            <button id="air" class="btn phoneme-btn">/eə/<br><u>air</u></button>
+            <button id="ear" class="btn phoneme-btn">/ɪə/<br><u></u>ear</button>
+            <button id="show" class="btn phoneme-btn">/əʊ/<br>sh<u>ow</u></button>
+            <button id="house" class="btn phoneme-btn">/aʊ/<br>h<u>ou</u>se</button><br>
+        </div>
+        <button id="tourist" class="btn phoneme-btn">this sound is unusual to hear:<br>/ʊə/<br>t<u>our</u>ist<br>many people pronounce this /ɔ:/</button>
+
     </div>
 
 <script src="script.js"></script>

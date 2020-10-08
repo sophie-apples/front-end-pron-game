@@ -258,7 +258,7 @@ const questions = [
         question: 'east',
         answers: [
             {text:'nine', correct:false},
-            {text:'meal', correct:false}
+            {text:'meal', correct:true}
         ]
     },
 ]
